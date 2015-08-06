@@ -1,0 +1,4 @@
+1) Try to center the middle content using bootstrap, in a way that it auto-render on mobile as well
+2) Overlay a contact form when you select contact us (look at the approached used when #1-2 is selected)
+3) Using bootstrap, build a new content when #1-1 is selected. You could try to design a combination of images and text. 
+For example you could look to use bootstrap media component: http://getbootstrap.com/components/#media

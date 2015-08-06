@@ -1,0 +1,200 @@
+/**
+ *  to remove the scroll bars 	
+body {
+	overflow: hidden;
+}*/
+
+/** Sitcky footer */
+.footer {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 60px; /** Footer with fixed height */
+	background-color: #f5f5f5;
+}
+
+.footer > .container {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.footer-text {
+	margin: 20px 0;
+	text-align: center;
+	
+	font-family: 'Poiret One', cursive;
+	font-size: 18px;
+	font-weight: 300;
+	color: #00000;
+}
+
+section {
+	padding-bottom: 60px;  /** Add enough space to include the footer */
+}
+
+.wr-header {
+	height: 100px;
+}
+
+.glyphicon {
+	font-size: 26px;
+}
+
+.shopping-cart {
+	width: 80px;
+}
+
+.nav-button {/* From houzz.com/ */
+	line-height: 28px;
+	height: 60px;
+	padding: 17px 10px 16px 10px;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #AAAAAA;
+}
+
+.wr-cart {/* overlay the number on the cart */
+	position: relative;
+	margin-left: -15px;
+	top: -10px;
+	color: #ffffff;
+}
+
+.wr-signin {/* Adjust the sign in text with the icon */
+	position: relative;
+	margin-left: 10px;
+	top: -7px;
+}
+
+.navbar-controls {/* OVerall attributes for the container */
+	position: relative;
+	top: 6px;
+}
+
+.navbar-search-bar {/* From houzz.com/ */
+	padding-left: 0;
+	width: 600px;
+}
+
+.search-container {
+	width: 600px;
+	position: relative;
+	font-size: 16px;
+	line-height: 2em;
+	height: 2.3em;
+	top: 15px;
+	margin-left: 30px;
+}
+
+.search-container > input {
+	width: 100%;
+	height: 100%;
+	padding: .15em 10px .15em 3em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #333;
+	border: 1px solid #aaa;
+}
+
+.search-container > i {
+	position: relative;
+	top: -30px;
+	margin-left: 5px;
+	color: #AAAAAA;
+}
+
+.search-container > i:hover {
+	cursor: pointer;
+}
+
+.btn-group {/** add space to left of each menu item */
+	margin-left: 20px;
+}
+
+.btn-default {/** remove some default properties */
+	background-image: none;
+	background-repeat: no-repeat;
+	border: none;
+	box-shadow: none;
+	
+	font-size: 16px;
+	font-weight: bold;
+	color: #AAAAAA;
+}
+
+.btn .caret {/** add space to left of the drop down icon */
+	margin-left: 6px;
+}
+
+.navbar-menu {
+	text-align: center;
+}
+
+.carousel {
+	top: 21px;
+    height: 800px;	
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img { /* Override the image within the carousel slide */
+	height: 800px;
+	width: 100%;
+}
+
+.carousel-caption {
+	font-family: 'Poiret One', cursive;
+	font-size: 48px;
+	font-weight: 700;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	
+	top: 100px;
+}
+
+
+.btn-lg {
+    top: 0px;
+	border-radius: 100%;
+	height:200px;
+	width:200px;
+	position: relative;
+}
+
+#middleContainer {
+	text-align: center;  /** Center the content within the container */
+    margin-top: 50px;
+}
+
+#contactFormId {
+	position: absolute;
+	top: 15%;
+	left: 10%;
+	
+	width: 80%;
+	height: 70%;
+	
+	background-color: black;
+	opacity: 0.5;
+	
+	z-index: 100;
+}
+
+.form-container-style {
+	background-color: #FFF;
+	height: 400px;
+	width: 400px;
+	border: 1px solid #ccc;
+	
+	/** Center horizontally */
+	margin-left: 50%;
+	left: -200px;
+	
+	top: 200px;
+}
+
+.label {
+	color: #000;
+	font-size: 14px;
+}
+
