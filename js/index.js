@@ -1,13 +1,19 @@
 // When document is ready, start to do things
 
+var database;
+
 $(function() { 
     console.log('Entry Point');
     
-    buildHeader();
+    $.getJSON('assets/data/database.json', function(data) {
+    	database = data;
+    	
+        buildHeader();
 
-    buildFooter();
-    
-    home();
+	    buildFooter();
+	    
+	    home();
+    });   
 });
 
 /**
@@ -33,7 +39,10 @@ function buildHeader() {
 			console.log('Search function');
 		});
 
-
+        $('#searchWordId').keyup(function() {
+		     var value = $('#searchWordId').val();
+		     searchContent(value);
+		});
 		
 		$.getJSON('assets/data/menu.json', function(data) {
 			var index = 0;
@@ -173,4 +182,29 @@ function buildMiddle() {
      	});
      	
      });
+}
+
+/**
+ * Search the word within a database
+ * @param {Object} word
+ */
+function searchContent(word) {
+	// Remove any previous result
+	$('#listResultId').remove();
+	
+	// Search for new result
+	for (var i in database) {
+		var obj = database[i];
+
+		if (obj.title.indexOf(word) >= 0) {
+			var images = obj.image;
+			var listResult = $('<ul id="listResultId"></ul>');
+			for (var i in images) {
+				var url = images[i];
+				var placeholder = $('<li style="display: inline"><img src="' + url + '"/></li>');
+				listResult.append(placeholder);
+			}
+			$('#siteContentId').prepend(listResult);
+		}
+	}
 }
