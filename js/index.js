@@ -39,9 +39,10 @@ function buildHeader() {
 			console.log('Search function');
 		});
 
-        $('#searchWordId').keyup(function() {
-		     var value = $('#searchWordId').val();
-		     searchContent(value);
+        $('#searchWordId').keyup(function(event) {
+            event.preventDefault();
+		    var value = $('#searchWordId').val();
+		    searchContent(value);
 		});
 		
 		$.getJSON('assets/data/menu.json', function(data) {
@@ -192,19 +193,23 @@ function searchContent(word) {
 	// Remove any previous result
 	$('#listResultId').remove();
 	
+	var listResult = $('<ul id="listResultId"></ul>');
+	
 	// Search for new result
 	for (var i in database) {
 		var obj = database[i];
 
-		if (obj.title.indexOf(word) >= 0) {
+		if (word && word.length && obj.title.indexOf(word) >= 0) {
 			var images = obj.image;
-			var listResult = $('<ul id="listResultId"></ul>');
+			
 			for (var i in images) {
 				var url = images[i];
 				var placeholder = $('<li style="display: inline"><img src="' + url + '"/></li>');
 				listResult.append(placeholder);
 			}
-			$('#siteContentId').prepend(listResult);
+			
 		}
 	}
+	
+	$('#siteContentId').prepend(listResult);
 }
