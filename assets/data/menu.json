@@ -1,46 +1,31 @@
 {
+	
+
 	"0": {
-		"item": "PHOTOS",
-		"subitems": ["Kitchen", "Bath", "Bedroom", "Living", "Dining", "Home Office", "Baby & Kids", "Entry", "Hall", "Staircase", "Exterior", "Outdoor", "Basement", "Garage & Shed", "Home Bar", "Home Gym", "Laundry", "Pool", "Storage & Closets", "Wine Cellar"]
-	},
-
+		"item": "ABOUT US",
+		"subitems": ["About Us", "Learn More"]
+		},
 	"1": {
-		"item": "FIND PROS",
-		"subitems": ["Architects & Building Designers", "Design-Build Firms", "General Contractors", "Home Builders", "Interior Designers", "Kitchen & Bath Designers", "Kitchen & Bath Remodelers", "Landscape Architects", "Landscape Contractors", "Stone, Pavers & Concrete", "Tile, Stone & Countertops"]
-	},
-
-	"2": {
 		"item": "KITCHEN",
-		"subitems": ["Furniture", "Sinks & Faucets", "Tile", "Cabinet Hardware", "Lighting", "Tabletop", "Appliances", "Cookware", "Kitchen Knives", "Tools & Gadgets"]
-	},
+		"subitems": ["Kitchen Projects", "Design Dilemmas"]
+		},
 
-	"3": {
-		"item": "BATH",
-		"subitems": ["Bathroom Vanities", "Lighting", "Tile", "Bathtubs", "Faucets", "Sinks", "Showers", "Toilets", "Medicine Cabinets", "Bath Accessories"]
-	},
+	"2":  {
+		"item": "BATHROOM",
+		"subitems": ["Bathroom Projects", "Design Dilemmas"]
+		},
 
-	"4": {
-		"item": "BEDROOM",
-		"subitems": ["Beds & Headboards", "Dressers", "Nightstands", "Bedroom Decor", "Lamps", "Bedding", "Benches", "Chaises", "Closet Storage", "Futons"]
+	 "3": {
+		"item": "SPECIAL PROJECTS",
+		"subitems": ["Special Projects", "Design Dilemmas"]
 	},
-
-	"5": {
-		"item": "BEDROOM",
-		"subitems": ["Beds & Headboards", "Dressers", "Nightstands", "Bedroom Decor", "Lamps", "Bedding", "Benches", "Chaises", "Closet Storage", "Futons"]
-	},
-
-	"6": {
-		"item": "LIVING",
-		"subitems": ["Home Decor", "Artwork", "Sofas & Sectionals", "Armchairs & Accent Chairs", "Coffee & Accent Tables", "Bookcases", "Futons", "Media Storage", "Ottomans", "Rugs"]
-	},
-
-	"7": {
-		"item": "OUTDOOR",
-		"subitems": ["Furniture", "Lighting", "Outdoor Decor", "Lawn & Garden", "Fire Pits", "Grills", "Backyard Play"]
-	},
-
-	"8": {
-		"item": "LIGHTING",
-		"subitems": ["Bathroom & Vanity", "Ceiling Fans", "Chandeliers", "Floor Lamps", "Flush Mounts", "Kids Lighting", "Kitchen & Cabinet", "Landscape Lighting", "Outdoor Hanging Lights", "Outdoor Wall Lights", "Pendant Lighting", "Table Lamps", "Wall Sconces"]
+	
+	 "4": {
+		"item": "ADDITIONS",
+		"subitems": ["Additions", "Design Dilemmas"]
 	}
+
+	
+
+	
 }

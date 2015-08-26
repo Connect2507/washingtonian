@@ -2,8 +2,8 @@
     "0" : {
         "title" : "kitchen",
         "description" : "Home Interior 1",
-        "image" : ["http://ahkitchens.com/wp-content/uploads/2015/07/Kitchen-Cabinet-Outlet-Indiana-50x50.jpg", "http://ahkitchens.com/wp-content/uploads/2015/07/Kitchen-Cabinet-Outlet-Indiana-50x50.jpg"]
-    },
+        "image" : ["https://s3.amazonaws.com/devhouda/washingtonian/kitchen/washingtonian-kitchen.png"]
+        },
     
     "2" : {
         "title" : "living room",

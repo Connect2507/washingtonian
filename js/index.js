@@ -76,7 +76,7 @@ function buildHeader() {
 }
 
 function menuItemsHandler() {
-	$('#1-1').on('click', function(event) {
+	$('#2-1').on('click', function(event) {
         event.preventDefault();
         
         $('#kitchenContainerId').remove();
@@ -92,9 +92,53 @@ function menuItemsHandler() {
         }));
 	});
 	
-	$('#1-2').on('click', function() {
+	$('#2-2').on('click', function() {
         $('body').append($('<div id="contactFormId"><div>'));
 	});
+
+	//bathroom 
+    $('#3-1').on('click', function(event) {
+        event.preventDefault();
+        
+        $('#bathroomContainerId').remove();
+        
+        $('#siteContentId').append( $('<div id="bathroomContainerId">').load('html/bathroom.html', function() {
+            // JS logic scroll to item id: kitchenContentId
+            
+            // Discrete Scroll, without animation: 
+            // window.scrollTo(0, $("#kitchenContainerId").offset().top);
+            
+            // Animated scroll:
+            $('html, body').animate({ scrollTop: $("#bathroomContainerId").offset().top }, 1500);
+        }));
+	});
+	
+	$('#3-2').on('click', function() {
+        $('body').append($('<div id="contactFormId"><div>'));
+	});
+
+	//additions
+	$('#4-1').on('click', function(event) {
+        event.preventDefault();
+        
+        $('#additionsContainerId').remove();
+        
+        $('#siteContentId').append( $('<div id="additionsContainerId">').load('html/additions.html', function() {
+            // JS logic scroll to item id: kitchenContentId
+            
+            // Discrete Scroll, without animation: 
+            // window.scrollTo(0, $("#kitchenContainerId").offset().top);
+            
+            // Animated scroll:
+            $('html, body').animate({ scrollTop: $("#additionsContainerId").offset().top }, 1500);
+        }));
+	});
+	
+	$('#4-2').on('click', function() {
+        $('body').append($('<div id="contactFormId"><div>'));
+	});
+
+
 }
 
 function buildFooter() {
