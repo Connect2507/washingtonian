@@ -3,26 +3,26 @@
 
 	"0": {
 		"item": "ABOUT US",
-		"subitems": ["About Us", "Learn More"]
+		//"subitems": ["About Us", "Learn More"]
 		},
 	"1": {
 		"item": "KITCHEN",
-		"subitems": ["Kitchen Projects", "Design Dilemmas"]
+		//"subitems": ["Kitchen Projects", "Design Dilemmas"]
 		},
 
 	"2":  {
 		"item": "BATHROOM",
-		"subitems": ["Bathroom Projects", "Design Dilemmas"]
+		//"subitems": ["Bathroom Projects", "Design Dilemmas"]
 		},
 
 	 "3": {
 		"item": "SPECIAL PROJECTS",
-		"subitems": ["Special Projects", "Design Dilemmas"]
+		//"subitems": ["Special Projects", "Design Dilemmas"]
 	},
 	
 	 "4": {
 		"item": "ADDITIONS",
-		"subitems": ["Additions", "Design Dilemmas"]
+		//"subitems": ["Additions", "Design Dilemmas"]
 	}
 
 	

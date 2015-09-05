@@ -49,32 +49,46 @@ function buildHeader() {
 			var index = 0;
 			$.each(data, function() {
 				//console.log(this);
-				index++;
-				var itemContent = $('<div class="btn-group">'
-				                        + '<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'
+				//index++;
+				var itemContent = $('<div class="btn-group" role="group" aria-labelledby="...">'
+				                        + '<button type="button" class="btn btn-default">'
                                             + this.item
                                             + '<span class="caret"></span>'
                                         + '</button>'
-                                        + '<ul  id="menuItem' + index + '" class="dropdown-menu" aria-labelledby="dropdownMenu1"></ul></div>');
+                                        + '<ul  id="menuItem' + index + '></ul></div>');
 
 				$('#navbar-menu-id').append(itemContent);
 				
 				// Create the submenu
-				var itemIndex = 0;
-				for (var i in this.subitems) {
-					itemIndex++;
-					var label = this.subitems[i];
-				    var listsubItem = $('<li id="' + index + '-' + itemIndex + '"><a href="#">' + label + '</a></li>');
-				    $('#menuItem' + index).append(listsubItem);
-				}
-			});
+				//var itemIndex = 0;
+				//for (var i in this.subitems) {
+					//itemIndex++;
+					//var label = this;
+					//console.log(this);
+				    //var listsubItem = $('<li id="' + index + '-' + itemIndex + '"><a href="#">' + label + '</a></li>');
+				    //$('#menuItem' + index).append(listsubItem);
+				
+			
+
+		});
 			
 			// Add the action listeners
 			menuItemsHandler();
-		});
+		})
 	});
 }
 
+/*<!-- Nav bar with sections content 
+			
+			<div class="btn-group" role="group" aria-labelledby="...">
+  <button type="button" class="btn btn-default"> ABOUT US</button>
+  <button type="button" class="btn btn-default">KITCHEN</button>
+  <button type="button" class="btn btn-default">BATHROOM</button>
+  <button type="button" class="btn btn-default">SPECIAL PROJECTS</button>
+  <button type="button" class="btn btn-default">SCHEDULE APPOINTMENT </button>
+
+</div>*/
+-->
 function menuItemsHandler() {
 	$('#2-1').on('click', function(event) {
         event.preventDefault();
