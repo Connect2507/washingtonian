@@ -45,7 +45,7 @@ function buildHeader() {
 		    searchContent(value);
 		});
 		
-		$.getJSON('assets/data/menu.json', function(data) {
+		/*$.getJSON('assets/data/menu.json', function(data) {
 			var index = 0;
 			$.each(data, function() {
 				//console.log(this);
@@ -73,8 +73,9 @@ function buildHeader() {
 		});
 			
 			// Add the action listeners
-			menuItemsHandler();
-		})
+			
+		})*/
+menuItemsHandler();
 	});
 }
 
@@ -90,12 +91,13 @@ function buildHeader() {
 </div>*/
 -->
 function menuItemsHandler() {
-	$('#2-1').on('click', function(event) {
-        event.preventDefault();
+	$('#kitchenNav').on('click', function(event) {
+        /* event.preventDefault();*/ 
+        console.log("kitchen");
         
-        $('#kitchenContainerId').remove();
+        /*$('#kitchenContainerId').remove();
         
-        $('#siteContentId').append( $('<div id="kitchenContainerId">').load('html/kitchen.html', function() {
+        $('#siteContentId').append( $('<div id="kitchenContainerId">')/*.load('html/kitchen.html', function() {
             // JS logic scroll to item id: kitchenContentId
             
             // Discrete Scroll, without animation: 
@@ -103,7 +105,7 @@ function menuItemsHandler() {
             
             // Animated scroll:
             $('html, body').animate({ scrollTop: $("#kitchenContainerId").offset().top }, 1500);
-        }));
+        });*/
 	});
 	
 	$('#2-2').on('click', function() {
@@ -271,3 +273,36 @@ function searchContent(word) {
 	
 	$('#siteContentId').prepend(listResult);
 }
+
+ 
+    $("#kitchen").hover(
+    	function() {
+    //$(this ).append( $( "<button> Schedule APPOINTMENT</button>" ) );
+   $('#kitchenButton').remove();
+   var kitchenbutton = $('<button id= "kitchenButton"> ScheduLE </button>');
+   $('#kitchen').prepend(kitchenbutton);
+
+    });
+  /* function() {
+    $( this ).find( "span:last" ).remove();*/
+  
+
+ 
+    /*jQuery('.show-image').hover(function() {
+         jQuery(this).find('.the-buttons').fadeIn(1500);
+    }, function() {
+        jQuery(this).find('.the-buttons').fadeOut(1500); 
+    });*/
+
+    /*$('.show-image').click(function() {
+         $(this).find('.button').fadeIn(1500);
+    }, function() {
+        $(this).find('.button').fadeOut(1500); 
+    });
+
+    $('.show-image').mouseout(function() {
+        $(this).find('.button').fadeOut(1500); 
+    });*/
+
+
+
